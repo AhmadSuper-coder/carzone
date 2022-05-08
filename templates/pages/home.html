@@ -108,7 +108,6 @@
         <!-- Main title -->
         <div class="main-title">
             <h1>Featured <span>Cars</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         <!-- Slick slider area start -->
         <div class="slick-slider-area clearfix">
@@ -120,7 +119,7 @@
                             <a href="{% url 'car_detail' car.id %}" class="car-img">
                                 <div class="tag-2">Featured</div>
                                 <div class="price-box">
-                                    <span>${{car.price | intcomma}}</span>
+                                    <span>&#8377;{{car.price | intcomma}}</span>
                                 </div>
                                 <img class="d-block w-100" src="{{car.car_photo.url}}" alt="car" style="min-height: 262px; max-height: 262px;">
                             </a>
@@ -199,7 +198,6 @@
         <!-- Main title -->
         <div class="main-title">
             <h1>Latest <span>Cars</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         <div class="row">
             {% for car in all_cars %}
@@ -271,7 +269,7 @@
                             <p class="cartype">{{car.body_style}}</p>
                         </div>
                         <div class="pull-right">
-                            <p class="price">$ {{car.price | intcomma}}</p>
+                            <p class="price">&#8377; {{car.price | intcomma}}</p>
                         </div>
                     </div>
                 </div>
@@ -290,7 +288,6 @@
         <!-- Main title -->
         <div class="main-title">
             <h1>Executive <span>Team</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
         </div>
         <!-- Slick slider area start -->
         <div class="slick-slider-area clearfix">
@@ -366,7 +363,7 @@
                                 <img src="img/car-14.jpg" alt="best-car" class="img-fluid modalLabel-2">
                                 <div class="sobuz">
                                     <div class="price-box" style="padding-bottom: 5px;">
-                                        <span class="del-2">$1050.00</span>
+                                        <span class="del-2">&#8377; 1050.00</span>
                                     </div>
                                     <div class="">
                                         <a href="car-details.html" class="btn btn-md btn-round btn-theme">Convertible</a>
@@ -401,7 +398,7 @@
                                         <li>Audi</li>
                                         <li>2020</li>
                                         <li>Brand New</li>
-                                        <li>$178,000</li>
+                                        <li>&#8377; 178,000</li>
                                     </ul>
                                 </section>
                                 <div class="description">

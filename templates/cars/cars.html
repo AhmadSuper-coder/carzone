@@ -31,9 +31,9 @@
                         <div class="car-box-3">
                             <div class="car-thumbnail">
                                 <a href="{% url 'car_detail' car.id %}" class="car-img">
-                                    <div class="tag">For Rent</div>
+                                    <div class="tag">For Sell</div>
                                     <div class="price-box">
-                                        <span>$ {{car.price | intcomma }}</span>
+                                        <span>&#8377; {{car.price | intcomma }}</span>
                                     </div>
                                     <img class="d-block w-100" src="{{car.car_photo.url}}" alt="car"  style="min-height: 262px; max-height: 262px;">
                                 </a>
